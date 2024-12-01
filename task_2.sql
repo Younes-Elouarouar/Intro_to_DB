@@ -31,6 +31,8 @@ CREATE TABLE IF NOT EXISTS orders (
     customer_id INT,
     order_date DATE NOT NULL,
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+    FOREIGN KEY (book_id) REFERENCES books(book_id)
+
 );
 
 -- Create Order_Details table
