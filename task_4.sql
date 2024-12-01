@@ -11,5 +11,6 @@ SELECT
 FROM 
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
-    TABLE_SCHEMA = DATABASE() -- Current database
+    TABLE_SCHEMA = 'alx_book_store'", "TABLE_NAME = 'Books'
+    TABLE_SCHEMA = DATABASE() 
     AND TABLE_NAME = 'books';
